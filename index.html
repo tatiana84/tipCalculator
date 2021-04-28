@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<htlm>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Tatiana Muntean">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator Tip for waitress</title>
+        <link rel="stylesheet" href="./style.css">
+    <body>
+        <div class="container">
+            <h3 class="header">Tips Calculator</h3>
+            <div class="total-container">
+                <label for="amount">Total Bill Amount:</label>
+                <input type="number" id="amount" min="0">
+            </div>
+            <h3>The Service Level:</h3>
+            <form class="level-service">
+                <input type="radio" id="radio-button" name="level-service" value="0.3" checked>
+                <label for="radio-button">Oustanding - 30%</label> <br>
+                <input type="radio" id="radio-button" name="level-service" value="0.2" checked>
+                <label for="radio-button">Good - 20%</label> <br>
+                <input type="radio" name="level-service" id="radio-button" value="0.15" checked>
+                <label for="radio-button">OKish - 15%</label> <br>
+                <input type="radio" name="level-service" id="radio-button" value="0.1" checked>
+                <label for="radio-button">Bad - 10%</label> <br>
+                <input type="radio" name="level-service" id="radio-button" value="0" checked>
+                <label for="radio-button">Never coming back - 0%</label>
+            </form>
+
+            <h3>Please, select the number of persons that are splitting the bill:</h3>
+            <select name="persons" id="persons">
+                <option value="">--Please, choose an option--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button type="button" id="calculate">Calculate!</button>
+
+            <div id="total-tip">
+                <span id="tip">0.00</span><sup>$</sup>
+                <small id="each">each</small>
+              </div>
+        </div>
+        <script type="text/JavaScript" src="app.js"></script>
+    </body>
+</htlm>

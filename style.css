@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightslategray;
+}
+
+.container {
+    height: 525px;
+    width: 360px;
+    margin: 100px auto;
+    background:lightgray;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    background: #1cf3cf;
+    color: black;
+    margin: 0;
+    padding: 10px 100px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 90px;
+}
+  
+input {
+    padding-left: 20px;
+}
+
+.total-container {
+    margin: auto;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.level-service {
+    padding: 13px 13px 20px 20px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+#persons {
+    position: relative;
+    width: 60%;
+    padding: 5px 5px 8px 8px;
+    margin-left: 20px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background:#1cf3cf;
+    color: black;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+}
+  
+button:hover {
+    background: #0ef0b7;
+    border-bottom-color: #111;
+}
+  
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+#total-tip {
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#total-tip:before {
+    content: "Tip amount";
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+}
+  
+#total-tip sup {
+    font-size: 15px;
+    top: -18px;
+}
+  
+#total-tip small {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+}
